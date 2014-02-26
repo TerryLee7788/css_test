@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>我自己常用的3種置中方法</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<style>
+    .test, .test-1, .test-2{
+        height:100px;
+        background:red;
+    }
+    .test{
+        text-align:center;
+    }
+    .test-2{
+        position:relative;
+    }
+    .inner-box, .inner-box-1, .inner-box-2{
+        width:50px;
+        height:50px;
+        background:yellow;
+    }
+    .inner-box{
+        display:inline-block;    
+    }
+    .inner-box-1{
+        margin:0 auto;
+    }
+    .inner-box-2{
+        position:absolute;
+        left:50%;
+        margin-left:-25px;
+    }
+</style>
+</head>
+<body>
+    <h1>3種常用的置中方法0.0</h1>
+
+    <h2>置中方法1</h2>
+    <div class="test">
+        <div class="inner-box"></div>
+    </div>
+
+    <h2>置中方法2</h2>
+    <div class="test-1">
+        <div class="inner-box-1"></div>
+    </div>
+
+    <h2>置中方法3</h2>
+    <div class="test-2">
+        <div class="inner-box-2"></div>
+    </div>
+</body>
+</html>
